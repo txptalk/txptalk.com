@@ -1,0 +1,9 @@
+<div class="post">
+	<txp:if_custom_field name="post-hero">
+	<div class="post-hero">
+		<a href="<txp:permlink />" rel="nofollow" title="<txp:title />"><img src="//cdn.txptalk.com/images/<txp:custom_field name='post-hero' />" alt="<txp:title />"></a>
+	</div>
+	</txp:if_custom_field>
+	<h2><a href="<txp:permlink />" title="<txp:title />"><txp:title /></a></h2>
+	<txp:if_excerpt><div class="excerpt"><txp:excerpt /></div><a href="<txp:permlink />" class="button secondary tiny" rel="nofollow" title="Read: <txp:title />">Read on...</a><txp:else /><txp:body /></txp:if_excerpt>
+</div>

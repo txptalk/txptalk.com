@@ -1,0 +1,7 @@
+<div class="medium-12 small-6 columns">
+	<div class="widget widget-default">
+	<h4><txp:title /></h4>
+	<txp:if_excerpt><txp:excerpt /></txp:if_excerpt>
+	<txp:body />
+	</div>
+</div>

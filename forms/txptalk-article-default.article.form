@@ -1,0 +1,20 @@
+<div class="medium-8 columns main-column">
+	<div class="post">
+		<txp:if_custom_field name="post-hero">
+		<div class="post-hero">
+			<img src="//cdn.txptalk.com/images/<txp:custom_field name='post-hero' />" alt="<txp:title />">
+		</div>
+		</txp:if_custom_field>
+		<h1><txp:title /></h1>
+		<txp:if_excerpt><div class="excerpt"><txp:excerpt /></div></txp:if_excerpt>
+		<div class="social">
+			<txp:output_form form="txptalk-social-share" />
+		</div>
+		<txp:body />
+	</div>
+</div>
+<div class="medium-4 columns side-column">
+	<div class="row">
+		<txp:article_custom section="widgets" form="txptalk-widget-default" limit="9999" />
+	</div>
+</div>

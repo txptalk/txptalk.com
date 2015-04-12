@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<txp:arc_meta_title />
+<txp:arc_meta_description />
+<txp:arc_meta_robots />
+<txp:arc_meta_keywords />
+<txp:arc_meta_canonical />
+
+<txp:arc_meta_open_graph />
+<txp:arc_meta_twitter_card />
+
+
+</head>
+<body>
+<txp:output_form form="txptalk-tracking" />
+
+<div id="page-head">
+	<div class="row">
+		<div class="medium-12 columns">
+		<a href="http://txptalk.com/"><img src="http://cdn.txptalk.com/images/txptalk-com-logo.png" alt="TXPTALK.com" /></a>
+		</div>
+	</div>
+</div>
+
+<div id="page-body">
+	<div class="row">
+		<txp:if_individual_article>
+		<txp:article form="txptalk-article-default" />
+		<txp:else />
+		<div class="medium-8 columns main-column">
+			<txp:article form="txptalk-article-default-teaser" />
+		</div>
+		<div class="medium-4 columns side-column">
+			<div class="row">
+				<txp:article_custom section="widgets" form="txptalk-widget-default" limit="9999" />
+			</div>
+		</div>
+		</txp:if_individual_article>
+	</div>
+</div>
+
+<div id="page-foot">
+	<div class="row">
+		<div class="medium-12 columns">
+			<div class="copyright">
+				&copy; 2010 &ndash; 2015 <a href="http://txptalk.com/">TXPTALK.COM</a>
+			</div>
+			<div class="credits">
+				Powered by <a href="http://www.textpattern.com/" rel="nofollow external">Textpattern CMS</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="http://foundation.zurb.com/" rel="nofollow external">ZURB Foundation</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="http://fontawesome.io/" rel="nofollow external">Font Awesome</a>
+			</div>
+			<div class="legal">
+				<a href="/impressum" rel="nofollow">Imprint</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="/datenschutz" rel="nofollow">Privacy</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="/haftungsausschluss" rel="nofollow">Disclaimer</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- FOR PERFORMANCE REASONS -->
+<link rel="shortcut icon" href="http://cdn.txptalk.com/images/favicon.png" type="image/png" />
+<link rel="sitemap" href="http://txptalk.com/sitemap.xml" />
+<link rel="stylesheet" href="//cdn.txptalk.com/css/foundation.min.css" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Indie+Flower" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="//cdn.txptalk.com/css/custom.css" />
+<script src="//cdn.txptalk.com/js/vendor/modernizr.js"></script>
+<script src="//cdn.txptalk.com/js/vendor/jquery.js"></script>
+<script src="//cdn.txptalk.com/js/foundation.min.js"></script>
+<script>
+$(document).foundation();
+$('a[rel~="external"]').attr('target', '_blank');
+</script>
+<!-- // -->
+</body>
+</html>
